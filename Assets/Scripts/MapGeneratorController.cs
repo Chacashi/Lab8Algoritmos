@@ -36,6 +36,7 @@ public class MapGeneratorController : MonoBehaviour
                     currentMapPart.GetComponent<BoxCollider2D>().enabled = false;
                 }
                 currentMapPart.GetComponent<MapPartController>().SetSprite(arraySprites[index]);
+                currentMapPart.transform.SetParent(this.transform);
             }
         }
 
