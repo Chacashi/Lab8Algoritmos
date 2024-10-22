@@ -15,12 +15,13 @@ public class GraphMapController : MonoBehaviour
    DoubleLinkList<NodeControll> ListNodes = new DoubleLinkList<NodeControll>();
     [SerializeField] PlayerController player;
 
-
+    //soy bajito
     private void Start()
     {
-        SetInitialNode();
+  
         OnDrawGraph();
         ConnectNodes();
+        SetInitialNode();
     }
     void OnDrawGraph()
     {
