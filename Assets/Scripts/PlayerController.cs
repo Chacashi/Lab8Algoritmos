@@ -40,7 +40,7 @@ public class PlayerController : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.tag=="Node")
+        if (collision.gameObject.tag=="Node")   
         {
             SetNewPosition(collision.GetComponent<NodeControll>().GetAdjacentNode().transform.position);
         } 
